@@ -8,6 +8,15 @@ const saveTask = (title, description) =>
         description,
     });
 
+const getTasks = () => db.collection("tasks").get();
+
+window.addEventListener("DOMContentLoaded", async(e) => {
+    const quuerySnapshot = await getTasks();
+    quuerySnapshot.forEach(doc => {
+        console.log(doc.data())
+    })
+});
+
 taskForm.addEventListener("submit", async(e) => {
     e.preventDefault();
 
