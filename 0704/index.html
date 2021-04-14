@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#193e6c">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/pulse/bootstrap.min.css">
     <title>Sergio Orizano Salvador</title>
 
 </head>
@@ -20,7 +21,30 @@
 
     </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAQSoMJ0sEjaUr7VBPBuV7pWtGsEAiuEWw",
+            authDomain: "db-html.firebaseapp.com",
+            databaseURL: "https://db-html-default-rtdb.firebaseio.com",
+            projectId: "db-html",
+            storageBucket: "db-html.appspot.com",
+            messagingSenderId: "794015761901",
+            appId: "1:794015761901:web:a5bcb8d58ae9061c6a93e4",
+            measurementId: "G-DN7G3ESLHG"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
     <script src="index.js"></script>
 </body>
 
