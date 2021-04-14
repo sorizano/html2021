@@ -12,7 +12,6 @@ taskForm.addEventListener("submit", async(e) => {
         title,
         description
     })
-
     console.log(response)
 
     console.log(title, description)
