@@ -8,7 +8,6 @@ const saveTask = (title, description) =>
         description,
     });
 
-
 taskForm.addEventListener("submit", async(e) => {
     e.preventDefault();
 
