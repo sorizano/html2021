@@ -6,14 +6,14 @@ taskForm.addEventListener("submit", async(e) => {
     e.preventDefault();
 
     const title = taskForm["task-title"].value;
-    const descriprion = taskForm["task-desciption"].value;
+    const description = taskForm["task-desciption"].value;
 
     const response = await db.collection("tasks").doc().set({
         title,
-        descriprion
+        description
     })
 
     console.log(response)
 
-    console.log(title, descriprion)
+    console.log(title, description)
 })
