@@ -1,4 +1,6 @@
-const db = firebase.firestore();
+const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
 
 
 const taskForm = document.getElementById('task-form');
