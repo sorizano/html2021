@@ -11,10 +11,11 @@ const saveTask = (title, description) =>
 taskForm.addEventListener("submit", async(e) => {
     e.preventDefault();
 
-    const title = taskForm["task-title"].value;
-    const description = taskForm["task-description"].value;
+    const title = taskForm["task-title"];
+    const description = taskForm["task-description"];
 
-    await saveTask(title, description);
+    await saveTask(title.value, description.value);
 
-    console.log(title, description);
+    taskForm.reset();
+    title.focus();
 });
