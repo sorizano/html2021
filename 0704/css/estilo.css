@@ -16,6 +16,6 @@ body {
 
 .cuerpo {
     width: 100%;
-    height: 500px;
+    height: auto;
     background-color: #f5c7bc;
 }

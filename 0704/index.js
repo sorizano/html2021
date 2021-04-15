@@ -1,6 +1,7 @@
 const db = firebase.firestore();
 
 const taskForm = document.getElementById("task-form");
+const taskContainer = document.getElementById("tasks-container");
 
 const saveTask = (title, description) =>
     db.collection("tasks").doc().set({
@@ -14,6 +15,15 @@ window.addEventListener("DOMContentLoaded", async(e) => {
     const quuerySnapshot = await getTasks();
     quuerySnapshot.forEach(doc => {
         console.log(doc.data())
+
+        const task = doc.data();
+
+        taskContainer.innerHTML += `<div class="card card-body mt-2 border-primary">
+           
+            <h3 class="h5">${task.title}</h3>
+            <p>${task.description}</p>
+
+        </div>`
     })
 });
 
