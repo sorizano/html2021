@@ -18,7 +18,8 @@ Para algunos proyectos estamos usando firebase, tienes que utlizar tus cuentas p
 
 Los siguientes proyectos se finalizaron en las  siguientes versiones: 
 
-• Uso de Firebase en un proyecto HTML (0704 - v 1.8.20)
+• Uso de Firebase en un proyecto HTML (0704 - v 1.8.20) => está aplicación permite agregar contenido desde un formulario, editar y elimar los elementos, se encuentra conectado a una base de datos no relacional en firebase.
+
 • Autenticación por redes sociales usando firebase con HTML (1504 - En Desarrollo)
 
 ## Expresiones de Gratitud 🎁
