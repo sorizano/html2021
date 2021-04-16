@@ -17,5 +17,19 @@ body {
 .cuerpo {
     width: 100%;
     height: auto;
-    background-color: #f5c7bc;
+    background-color: #e7d6fa;
+}
+
+#tit1 {
+    margin-top: 30px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #ffd6f8;
+}
+
+footer p {
+    margin-top: 15px;
 }
