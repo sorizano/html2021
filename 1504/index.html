@@ -46,18 +46,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <form id="signup-form">
+                        <div class="mb-3">
+                            <input type="text" id="signup-email" class="form-control" placeholder="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" id="signup-password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Signup</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
+
     <footer id="footer" class="d-flex justify-content-center">
-        <p>Aplicación Versión <strong> 1.2.1 </strong> © 2021 - by <strong><a href="https://www.linkedin.com/in/sorizano/">Checho</a></strong></p>
+        <p>Aplicación Versión <strong> 1.3.2 </strong> © 2021 - by <strong><a href="https://www.linkedin.com/in/sorizano/">Checho</a></strong></p>
     </footer>
 
 
@@ -65,6 +70,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+    <!--Firebase Scripts-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCd4AFPvZc_7XRWpgqQqER2hyRKHp1yZko",
+            authDomain: "fb-ingreso.firebaseapp.com",
+            projectId: "fb-ingreso",
+            storageBucket: "fb-ingreso.appspot.com",
+            messagingSenderId: "958801120385",
+            appId: "1:958801120385:web:bc12e1490ac38d6128d180"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!--Custom code-->
+    <script src="main.js"></script>
 </body>
 
 </html>
